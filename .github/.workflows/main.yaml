@@ -1,7 +1,6 @@
 name: Pipeline
 
-run-name: Run triggered by ${{ github.actor} 🤑
-
+run-name: 🗿🗿 Run triggered by ${{ github.actor }} 🗿🗿
 on: [push, workflow_dispatch]
 
 jobs:
@@ -10,20 +9,20 @@ jobs:
     env:
       DOTNET_INSTALL_DIR: /home/actions-runner/dotnet
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v5 # immer auf commit hash pinnen wenn es um sensitive informationen geht, da sonst schadcode in den actions sein kann.
+      - name: Check 🗿 out 🗿 repository
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - name: Set up .NET 9
         uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 9
-      - name: Build project
+      - name: Build 🗿 projects
         run: |
           dotnet build Deo.Backend
           dotnet build Deo.Frontend
-      - name: upload artifacts
-        uses: actions/upload-artifacts@v5
+      - name: Upload 🗿 artifacts
+        uses: actions/upload-artifact@v5
         with:
           name: build
           path: |
