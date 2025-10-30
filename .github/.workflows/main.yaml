@@ -1,0 +1,31 @@
+name: Pipeline
+
+run-name: Run triggered by ${{ github.actor} 🤑
+
+on: [push, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    env:
+      DOTNET_INSTALL_DIR: /home/actions-runner/dotnet
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5 # immer auf commit hash pinnen wenn es um sensitive informationen geht, da sonst schadcode in den actions sein kann.
+        with:
+          fetch-depth: 0
+      - name: Set up .NET 9
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 9
+      - name: Build project
+        run: |
+          dotnet build Deo.Backend
+          dotnet build Deo.Frontend
+      - name: upload artifacts
+        uses: actions/upload-artifacts@v5
+        with:
+          name: build
+          path: |
+            **/bin/
+            **/obj/
