@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deo.Frontend", "Deo.Fronten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deo.Frontend.Tests", "Deo.Frontend.Tests\Deo.Frontend.Tests.csproj", "{AA3C64B9-3E24-4784-B5C2-6F6E05B5BD3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deo.WebApp.Tests", "Deo.WebApp.Tests\Deo.WebApp.Tests\Deo.WebApp.Tests.csproj", "{3611ED23-63B6-4188-B1C8-7F7B59A77475}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deo.WebApp.Tests", "Deo.WebApp.Tests\Deo.WebApp.Tests.csproj", "{D37CBB2D-0C05-4D81-A725-22CE0F6A56B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,9 +38,9 @@ Global
 		{AA3C64B9-3E24-4784-B5C2-6F6E05B5BD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA3C64B9-3E24-4784-B5C2-6F6E05B5BD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA3C64B9-3E24-4784-B5C2-6F6E05B5BD3B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3611ED23-63B6-4188-B1C8-7F7B59A77475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3611ED23-63B6-4188-B1C8-7F7B59A77475}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3611ED23-63B6-4188-B1C8-7F7B59A77475}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3611ED23-63B6-4188-B1C8-7F7B59A77475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D37CBB2D-0C05-4D81-A725-22CE0F6A56B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D37CBB2D-0C05-4D81-A725-22CE0F6A56B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D37CBB2D-0C05-4D81-A725-22CE0F6A56B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D37CBB2D-0C05-4D81-A725-22CE0F6A56B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
