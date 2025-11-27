@@ -89,9 +89,6 @@ jobs:
         uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 9
-          cache: true
-          cache-dependency-path: |
-            Deo.WebApp.Tests/packages.lock.json
       - name: Restore dependencies
         run: dotnet restore --locked-mode Deo.WebApp.Tests
       - name: Build projects
